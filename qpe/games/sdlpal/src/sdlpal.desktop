@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaApplications
+Context=The Legend of Sword and Fairy
+[Desktop Entry]
+Comment[]=The Legend of Sword and Fairy
+Exec=paladin-starter
+Icon=paladin
+Type=Application
+MimeType=
+Name[]=Paladin
