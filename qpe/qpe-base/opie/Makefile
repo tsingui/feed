@@ -145,7 +145,7 @@ define Package/$(PKG_NAME)-have-libpam
   CATEGORY:=Qt/Qtopia
   SUBMENU:=$(SUB_MENU)
   SECTION:=qtopia-$(SUBMENU)
-  DEPENDS:=$(PKG_NAME) +libpam
+  DEPENDS:=$(PKG_NAME) +libpam @BROKEN
   DEFAULT:=y
 endef
 
