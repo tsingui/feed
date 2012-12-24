@@ -1,3 +1,9 @@
+#
+# This patch modified the qconfig-qpe.h to support cursor & mouse,
+# when the configure is '-qconfig qpe' .
+#
+# Signed-off-by: Richard Nee <richard.nee.cn@gmail.com>
+#
 --- qtopia-free-2.1.1/src/qt/qconfig-qpe.h.orig  2012-05-10 23:45:25.389158211 +0800
 +++ qtopia-free-2.1.1/src/qt/qconfig-qpe.h       2012-05-10 23:49:40.957158131 +0800
 @@ -45,6 +45,7 @@

@@ -3,8 +3,8 @@ File=QtopiaApplications
 Context=The Legend of Sword and Fairy
 [Desktop Entry]
 Comment[]=The Legend of Sword and Fairy
-Exec=paladin-starter
-Icon=paladin
+Exec=sdlpal
+Icon=sdlpal
 Type=Application
 MimeType=
-Name[]=Paladin
+Name[]=SDL Paladin

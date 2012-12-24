@@ -39,6 +39,7 @@ define Package/$(PKG_NAME)/description
   Maintainer: MurphyTalk(murphytalk@gmail.com) SunsetYang(sunsetyang@gmail.com)
 endef
 
+# need omp.h of libgomp in toolchain !
 define Build/Prepare
 	$(call Build/Prepare/Default)
 	( \

@@ -6,7 +6,7 @@
 #
 
 
-QT_NAME:=Qt
+QT_NAME:=Qt2
 QTOPIA_NAME:=Qtopia
 OPIE_NAME:=QtPalmtop
 
@@ -57,14 +57,14 @@ QTDIR:=$(QTE_PREFIX)
 
 ########## flags ##########
 TARGET_CFLAGS +=-I$(STAGING_DIR)/usr/include \
-	$(QTE_CFLAGS) \
-	$(QPE_CFLAGS)
+	$(QPE_CFLAGS) \
+	$(QTE_CFLAGS)
 TARGET_CXXFLAGS +=-I$(STAGING_DIR)/usr/include \
-	$(QTE_CXXFLAGS) \
-	$(QPE_CXXFLAGS)
+	$(QPE_CXXFLAGS) \
+	$(QTE_CXXFLAGS)
 TARGET_LDFLAGS +=-Wl,-rpath-link=$(STAGING_DIR)/usr/lib \
-	$(QTE_LDFLAGS) \
-	$(QPE_LDFLAGS)
+	$(QPE_LDFLAGS) \
+	$(QTE_LDFLAGS)
 
 ##########################################################
 ifneq ($(CONFIG_PACKAGE_qte2-sl)$(CONFIG_PACKAGE_qtopia-sl)$(CONFIG_PACKAGE_opie-sl),)

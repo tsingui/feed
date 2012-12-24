@@ -41,7 +41,7 @@ define Build/Prepare
 endef
 
 ifneq ($(CONFIG_PACKAGE_qtopia)$(CONFIG_PACKAGE_qtopia-sl),)
-QPE_LDFLAGS+=-lqtopia
+TARGET_LDFLAGS+=-lqtopia
 endif
 
 define Build/Compile

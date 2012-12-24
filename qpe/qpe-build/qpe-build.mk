@@ -6,7 +6,7 @@
 #
 
 
-QT_NAME:=Qt
+QT_NAME:=Qt2
 QTOPIA_NAME:=Qtopia
 OPIE_NAME:=QtPalmtop
 

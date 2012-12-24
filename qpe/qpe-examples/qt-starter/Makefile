@@ -9,6 +9,9 @@
 include $(TOPDIR)/rules.mk
 
 
+# 目前qt-stater还没完成！
+# 相对于所有自己所写的代码中这个是比较完善，思路比较清晰，但目前还因对qte2/qtopia换屏不熟悉导致没有完成。
+# qpe-starter-all/3-qpe/07-qpe-stop-system，是最新的也是这里所采用的。
 PKG_NAME:=qt-starter
 PKG_VERSION:=1.0
 PKG_RELEASE:=1

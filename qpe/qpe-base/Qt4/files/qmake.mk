@@ -34,7 +34,7 @@ define Build/Configure/Qmake
 	TARGET_LIBS="$(TARGET_LIBS)" \
 	STAGING_DIR_HOST="$(STAGING_DIR_HOST)" \
 	STAGING_DIR="$(STAGING_DIR)" \
-	qmake \
+	$(STAGING_DIR_HOST)/bin/qmake \
 		-spec $(QMAKE_SPECFILE) \
 		-o $(PKG_BUILD_DIR)/$(2)/Makefile \
 		$(PKG_BUILD_DIR)/$(2)/$(1).pro

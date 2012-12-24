@@ -20,7 +20,7 @@ PKG_BUILD_DIR=$(BUILD_DIR)/$(PKG_NAME)-free-$(PKG_VERSION)
 PKG_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/package.mk
--include $(STAGING_DIR)/mk/qpe-build.mk
+-include $(STAGING_DIR)/mk/qpe-package.mk
 SUB_MENU:=qpe-base
 
 define Package/$(PKG_NAME)/config
@@ -101,8 +101,13 @@ endef
 export QTDIR=$(DEV_QTDIR)
 export QPEDIR=$(PKG_BUILD_DIR)
 
-TARGET_LDFLAGS+=-Wl,-rpath-link=$(STAGING_DIR)/usr/lib,-rpath-link=$(PKG_BUILD_DIR)/lib
-TARGET_CFLAGS+=-I$(STAGING_DIR)/usr/include -I$(PKG_BUILD_DIR)/include
+# RSTRIP:=:
+# STRIP:=:
+# STRIP:=true
+
+
+TARGET_LDFLAGS+=-Wl,-rpath-link=$(STAGING_DIR)/usr/lib
+TARGET_CFLAGS:=-I$(PKG_BUILD_DIR)/include -I$(STAGING_DIR)/usr/include $(TARGET_CFLAGS)
 
 define Build/Configure
 	$(CP) ./files/linux-openwrt-g++/qmake-mkspecs/ $(PKG_BUILD_DIR)/mkspecs/qws/linux-openwrt-g++/
