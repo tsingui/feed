@@ -1,5 +1,0 @@
-menu "Decorations"
-  source noncore/decorations/flat/config.in
-  source noncore/decorations/liquid/config.in
-  source noncore/decorations/polished/config.in
-endmenu

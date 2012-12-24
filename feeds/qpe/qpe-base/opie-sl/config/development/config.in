@@ -1,3 +1,0 @@
-menu "Development"
-  source development/keyview/config.in
-endmenu
