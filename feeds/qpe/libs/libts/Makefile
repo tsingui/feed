@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libts
-PKG_VERSION:=master-2012-08-30
+PKG_VERSION:=2012.02.12
 PKG_RELEASE:=1
 
 PKG_SOURCE:=tslib-$(PKG_VERSION).tar.bz2
