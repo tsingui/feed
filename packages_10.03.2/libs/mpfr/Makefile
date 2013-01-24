@@ -25,9 +25,9 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   TITLE:=multiple-precision library
-  CATEGORY:=Development
+  CATEGORY:=Libraries
   SUBMENU:=
-  SECTION:=devel
+  SECTION:=libs
   DEPENDS:=+gmp
   URL:=http://www.mpfr.org
   MAINTAINER:=Richard Nee <openme@openwrt.org.cn>
