@@ -27,7 +27,7 @@ define Package/gcc
   SECTION:=devel
   CATEGORY:=Development
   TITLE:=gcc
-  DEPENDS:=+gmp +mpfr
+  DEPENDS:=+libgmp +libmpfr
 endef
 
 define Package/gcc/description
