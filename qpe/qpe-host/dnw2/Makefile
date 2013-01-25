@@ -1,5 +1,5 @@
 # 
-# Copyright (C) 2006 OpenWrt.org
+# Copyright (C) 2013 OpenWrt.org.cn
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -15,13 +15,13 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  TITLE:=DNW2 for USB download
-  CATEGORY:=Qt/Qtopia
-  SUBMENU:=qpe-host
-  SECTION:=qtopia-$(SUBMENU)
+  TITLE:=DNW2 for USB Download
+  CATEGORY:=Device
+  SUBMENU:=
+  SECTION:=utils
   DEPENDS:=
   URL:=
-  MAINTAINER:=Richard Nee <richard.nee.cn@gmail.com>
+  MAINTAINER:=Richard Nee <openme@openwrt.org.cn>
 endef
 
 define Package/$(PKG_NAME)/description
@@ -30,6 +30,8 @@ define Package/$(PKG_NAME)/description
 
     Please install libusb and libusb-dev before building.
     You should use lsusb to find out the actual vender ID & product ID of board.
+
+ Other DNW: https://github.com/changbindu/dnw-linux.git
 endef
 
 define Build/Compile
