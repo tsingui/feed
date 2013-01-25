@@ -113,7 +113,7 @@ void usage()
 	printf("Usage: dnw2 [options] file [address]\n\n");
 	printf("Options:\n");
 	printf("  -h, --help - This help text.\n\n");
-	printf("address - hexadecimal notation, e.g. 0x30800000, default is 0x30800000\n");
+	printf("address - hexadecimal notation, e.g. 0x30200000, default is 0x30200000\n");
 }
 
 // calculate checksum
