@@ -57,8 +57,8 @@ TSLIB_CONFDIR:=s3c24xx
 ifeq ($(CONFIG_TARGET_s3c24xx),y)
 TSLIB_CONFDIR:=s3c24xx
 endif
-ifeq ($(CONFIG_TARGET_s5pv210),y)
-TSLIB_CONFDIR:=s5pv210
+ifeq ($(CONFIG_TARGET_s5pc1xx),y)
+TSLIB_CONFDIR:=s5pc1xx
 endif
 
 define Package/$(PKG_NAME)/install
