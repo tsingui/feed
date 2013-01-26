@@ -149,12 +149,14 @@ define Build/Compile
 endef
 
 define Package/gcc/install
-	$(INSTALL_DIR) $(1)/usr/lib/
+	$(INSTALL_DIR) $(1)/usr/lib/ $(1)/lib/
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)
 	$(CP) $(TOOLCHAIN_DIR)/usr/include $(1)/usr/
 	$(CP) $(TOOLCHAIN_DIR)/usr/lib/crt* $(1)/usr/lib/
 	$(CP) $(TOOLCHAIN_DIR)/usr/lib/libc* $(1)/usr/lib/
+
 	$(CP) $(TOOLCHAIN_DIR)/usr/lib/* $(1)/usr/lib/
+	$(CP) $(TOOLCHAIN_DIR)/lib/* $(1)/lib/
 endef
 
 $(eval $(call BuildPackage,gcc))
