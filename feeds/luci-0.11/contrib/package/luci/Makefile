@@ -622,7 +622,7 @@ ifeq ($(USELOCAL),1)
 #		--exclude='boa-0*' --exclude='*.o' --exclude='*.so' \
 #		--exclude=dist | \
 #			tar x -C $(PKG_BUILD_DIR)/
-	cp -r ./luci/* $(PKG_BUILD_DIR)
+	cp -r ../../../../luci/* $(PKG_BUILD_DIR)
 #	$(SED) 's/distversion)%>/distversion)%>${IMAGE_TEST_VERSION}/g' $(PKG_BUILD_DIR)/modules/admin-full/luasrc/view/admin_status/index.htm
 #	$(SED) 's/distversion%>/distversion%>${IMAGE_TEST_VERSION}/g' $(PKG_BUILD_DIR)/themes/openwrt/luasrc/view/themes/openwrt.org/header.htm
 #	$(SED) 's/distversion%>/distversion%>${IMAGE_TEST_VERSION}/g' $(PKG_BUILD_DIR)/themes/XEyE/luasrc/view/themes/LuciXEyE/header.htm
