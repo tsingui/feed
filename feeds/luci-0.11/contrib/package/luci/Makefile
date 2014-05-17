@@ -463,6 +463,9 @@ $(eval $(call application,minidlna,LuCI Support for miniDLNA,\
 $(eval $(call application,transmission,LuCI Support for Transmission,\
 	+PACKAGE_luci-app-transmission:transmission-daemon))
 
+$(eval $(call application,xunlei-remote,LuCI Support for Transmission,\
+	+PACKAGE_luci-app-xunlei-remote:luci-app-xunlei-remote))
+
 $(eval $(call application,watchcat,LuCI Support for Watchcat,\
 	+PACKAGE_luci-app-watchcat:watchcat))
 
