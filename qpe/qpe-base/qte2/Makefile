@@ -96,14 +96,14 @@ define Package/$(PKG_NAME)-support-gif
 endef
 
 ### 2. other modules
-define Package/$(PKG_NAME)-support-libmng
-  TITLE:=Use libmng from the operating system
-  CATEGORY:=Qt/Qtopia
-  SUBMENU:=$(SUB_MENU)
-  SECTION:=qtopia-libs
-  DEPENDS:=$(PKG_NAME) +libmng
-  DEFAULT:=y
-endef
+#define Package/$(PKG_NAME)-support-libmng
+#  TITLE:=Use libmng from the operating system
+#  CATEGORY:=Qt/Qtopia
+#  SUBMENU:=$(SUB_MENU)
+#  SECTION:=qtopia-libs
+#  DEPENDS:=$(PKG_NAME) +libmng
+#  DEFAULT:=n
+#endef
 
 define Package/$(PKG_NAME)-support-nas-sound
   TITLE:=Use NAS libaudio from the operating system
@@ -276,7 +276,7 @@ define Build/Configure
 		$(if $(CONFIG_PACKAGE_$(PKG_NAME)-support-jpeg),-system-jpeg,-no-jpeg) \
 		$(if $(CONFIG_PACKAGE_$(PKG_NAME)-support-gif),-gif,-no-gif) \
 		 \
-		$(if $(CONFIG_PACKAGE_$(PKG_NAME)-support-libmng),-system-libmng,-no-mng) \
+		-no-mng \
 		$(if $(CONFIG_PACKAGE_$(PKG_NAME)-support-nas-sound),-system-nas-sound,-no-nas-sound) \
 		$(if $(CONFIG_PACKAGE_$(PKG_NAME)-support-xft),-xft,-no-xft) \
 		$(if $(CONFIG_PACKAGE_$(PKG_NAME)-support-sm),-sm,-no-sm) \
@@ -379,7 +379,7 @@ $(eval $(call BuildPackage,$(PKG_NAME)-support-libpng))
 $(eval $(call BuildPackage,$(PKG_NAME)-support-jpeg))
 $(eval $(call BuildPackage,$(PKG_NAME)-support-gif))
 
-$(eval $(call BuildPackage,$(PKG_NAME)-support-libmng))
+#$(eval $(call BuildPackage,$(PKG_NAME)-support-libmng))
 $(eval $(call BuildPackage,$(PKG_NAME)-support-nas-sound))
 $(eval $(call BuildPackage,$(PKG_NAME)-support-xft))
 $(eval $(call BuildPackage,$(PKG_NAME)-support-sm))
